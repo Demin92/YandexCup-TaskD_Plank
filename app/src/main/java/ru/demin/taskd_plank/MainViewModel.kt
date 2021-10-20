@@ -68,8 +68,6 @@ class MainViewModel(private val context: Application) : ViewModel() {
         valuesResult[1] = kotlin.math.abs(Math.toDegrees(valuesResult[1].toDouble()).toFloat())
         valuesResult[2] = kotlin.math.abs(Math.toDegrees(valuesResult[2].toDouble()).toFloat())
 
-        Log.d("Povarity", "${valuesResult[0]} ${valuesResult[1]} ${valuesResult[2]}")
-
         val isPlank =
             valuesResult[1] <= PLANK_X_ANGLE + PLANK_X_DELTA && valuesResult[1] >= PLANK_X_ANGLE - PLANK_X_DELTA
                 && valuesResult[2] <= PLANK_Y_ANGLE + PLANK_Y_DELTA && valuesResult[2] >= PLANK_Y_ANGLE - PLANK_Y_DELTA
